@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astreya | Крипто-инструменты</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo-container">
+                <h1 class="logo-text">ASTREYA AGENCY</h1>
+                <p class="logo-subtext" id="subtitle">Криптографические инструменты</p>
+            </div>
+            <div class="language-tabs">
+                <button class="lang-btn active" data-lang="ru">РУС</button>
+                <button class="lang-btn" data-lang="en">ENG</button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Шифр Цезаря -->
+            <section class="cipher-section">
+                <h2 data-translate="caesarTitle">ШИФР ЦЕЗАРЯ</h2>
+                <div class="input-group">
+                    <textarea id="caesar-text" placeholder="Введите текст..."></textarea>
+                </div>
+                <div class="settings-row">
+                    <input type="number" id="caesar-shift" value="3" min="1" max="32">
+                    <button id="encrypt-caesar" data-translate="encryptBtn">ЗАШИФРОВАТЬ</button>
+                    <button id="decrypt-caesar" data-translate="decryptBtn">РАСШИФРОВАТЬ</button>
+                </div>
+                <div class="result-container">
+                    <div id="caesar-result"></div>
+                    <button id="copy-caesar" data-translate="copyBtn">КОПИРОВАТЬ</button>
+                </div>
+            </section>
+
+            <!-- Шифр Виженера (премиум) -->
+            <section class="cipher-section premium">
+                <h2 data-translate="vigenereTitle">ШИФР ВИЖЕНЕРА <span class="premium-badge">PREMIUM</span></h2>
+                <div class="premium-overlay">
+                    <p data-translate="premiumText">Доступно в премиум версии</p>
+                    <button class="upgrade-btn" data-translate="upgradeBtn">Активировать за 5€</button>
+                </div>
+                <div class="input-group">
+                    <textarea id="vigenere-text" placeholder="Требуется премиум" readonly></textarea>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="vigenere-key" placeholder="Ключ (премиум)" readonly>
+                </div>
+                <div class="settings-row">
+                    <button id="encrypt-vigenere" class="premium-btn" data-translate="encryptBtn">ЗАШИФРОВАТЬ</button>
+                    <button id="decrypt-vigenere" class="premium-btn" data-translate="decryptBtn">РАСШИФРОВАТЬ</button>
+                </div>
+                <div class="result-container">
+                    <div id="vigenere-result"></div>
+                    <button id="copy-vigenere" data-translate="copyBtn">КОПИРОВАТЬ</button>
+                </div>
+            </section>
+
+            <!-- Донат и ссылка на инфо -->
+            <div class="donate-box">
+                <p data-translate="donateText">Поддержать разработку:</p>
+                <a href="https://paypal.me/astreyagency" target="_blank" class="paypal-btn">
+                    <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" alt="PayPal">
+                </a>
+            </div>
+            
+            <div class="info-link">
+                <a href="info.html" class="btn" data-translate="infoBtn">О ШИФРАХ</a>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <p>Astreya Agency | <span data-translate="rightsText">Все права защищены</span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

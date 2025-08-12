@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="info.title">Astreya | О шифрах</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo-container">
+                <h1 class="logo-text">ASTREYA AGENCY</h1>
+                <p class="logo-subtext" data-translate="info.subtitle">Криптографические инструменты</p>
+            </div>
+            <div class="language-tabs">
+                <button class="lang-btn active" data-lang="ru">РУС</button>
+                <button class="lang-btn" data-lang="en">ENG</button>
+            </div>
+        </header>
+
+        <main class="info-page">
+            <h2 data-translate="info.aboutTitle">Что такое шифр?</h2>
+            <p data-translate="info.aboutText1">Шифр — это способ спрятать сообщение, чтобы никто, кроме тебя и тех, кому ты доверяешь, не смог его прочитать. Шифры создают специальные правила замены букв, чтобы секретное сообщение выглядело как непонятный набор символов.</p>
+            
+            <div class="divider"></div>
+            
+            <h3 data-translate="info.caesarAbout">Шифр Цезаря: самый простой шифр с сдвигом букв</h3>
+            <p data-translate="info.caesarText1">Этот шифр придумал примерно 2000 лет назад древнеримский полководец Гай Юлий Цезарь, чтобы тайно посылать письма своим солдатам.</p>
+            <p data-translate="info.caesarText2">Он просто сдвигал все буквы в сообщении на 3 позиции вперёд по алфавиту. Например, буква А становится Г, Б становится Д и так далее.</p>
+            <p data-translate="info.caesarText3">Если у тебя слово «ДА», то сдвинув на 3 буквы, получим «ЖГ».</p>
+            <p><strong data-translate="info.caesarComplexity">Сложность взлома:</strong> Очень низкая — около 2 из 10. Сегодня такой шифр легко расшифровывается даже вручную.</p>
+            
+            <div class="divider"></div>
+            
+            <h3 data-translate="info.tarabarAbout">Тарабарщина — похожий русский шифр</h3>
+            <p data-translate="info.tarabarText1">В России в Средние века использовали похожий способ шифрования, который называли тарабарщина или тарабарская грамота. Его применяли для тайных переписок, например, митрополит Киприан и Сергий Радонежский.</p>
+            <p data-translate="info.tarabarText2">Тут буквы из верхнего алфавитного ряда заменяли на буквы из нижнего, по специальному правилу.</p>
+            <p><strong data-translate="info.tarabarComplexity">Сложность взлома:</strong> Примерно 3 из 10 — чуть сложнее, чем шифр Цезаря, но всё равно очень простой.</p>
+            
+            <div class="divider"></div>
+            
+            <h3 data-translate="info.vigenereAbout">Шифр Виженера — более умный шифр с ключевым словом</h3>
+            <p data-translate="info.vigenereText1">Этот шифр придумали в XVI веке и он стал популярным, потому что намного сложнее взламывается.</p>
+            <p data-translate="info.vigenereText2">Вместо одного сдвига для всего сообщения используется ключ — слово, которое помогает менять буквы по-разному в каждой позиции.</p>
+            
+            <div class="cipher-example">
+                <p><strong data-translate="info.vigenereExampleTitle">Простой пример:</strong></p>
+                <p data-translate="info.vigenereExample1">Исходное слово: «Астрея»</p>
+                <p data-translate="info.vigenereExample2">Ключ: «Шифр»</p>
+                <p data-translate="info.vigenereExample3">Мы подставляем ключ под текст и для каждой буквы складываем номера буквы из текста и ключа (представленные числами). Если ключ короче текста, его повторяют снова и снова.</p>
+                <p data-translate="info.vigenereExample4">Так буквы меняются по-разному, и это намного надёжнее.</p>
+            </div>
+            
+            <p><strong data-translate="info.vigenereComplexity">Сложность взлома:</strong> Средняя — около 5 из 10. Без знания ключа расшифровать сообщение уже не так просто.</p>
+            
+            <div class="divider"></div>
+            
+            <h3 data-translate="info.importanceTitle">Почему это важно?</h3>
+            <p data-translate="info.importanceText">Шифры помогают хранить личные данные и тайны в безопасности. Чем сложнее шифр, тем труднее его взломать постороннему.</p>
+            
+            <div class="info-link">
+                <a href="index.html" class="btn" data-translate="info.backBtn">НАЗАД</a>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <p data-translate="info.rightsText">Astreya Agency | Все права защищены</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

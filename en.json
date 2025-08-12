@@ -1,0 +1,11 @@
+{
+    "site-title": "Astreya Agency",
+    "site-subtitle": "Cryptography for Everyone",
+    "disclaimer": "⚠️ For educational purposes only!",
+    "caesar-title": "Caesar Cipher (Free)",
+    "caesar-placeholder": "Enter text",
+    "vigenere-title": "Vigenère Cipher (5€)",
+    "vigenere-locked": "Locked. <a href='#' onclick='buyVigenere()'>Buy access</a>",
+    "donate-title": "Support the Project",
+    "donate-button": "Donate via PayPal"
+}

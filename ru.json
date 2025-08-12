@@ -1,0 +1,11 @@
+{
+    "site-title": "Astreya Agency",
+    "site-subtitle": "Криптография для всех",
+    "disclaimer": "⚠️ Только для образовательных целей!",
+    "caesar-title": "Шифр Цезаря (Бесплатно)",
+    "caesar-placeholder": "Введите текст",
+    "vigenere-title": "Шифр Виженера (5€)",
+    "vigenere-locked": "Доступ закрыт. <a href='#' onclick='buyVigenere()'>Купить доступ</a>",
+    "donate-title": "Поддержать проект",
+    "donate-button": "Донат через PayPal"
+}
